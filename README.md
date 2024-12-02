@@ -8,3 +8,7 @@ npm install
 ```
  npm run express
 ```
+3. Перейти на localhost
+```
+http://localhost:8080/products
+```
