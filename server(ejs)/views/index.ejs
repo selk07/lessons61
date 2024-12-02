@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+                <head>
+                  <title><%= 'List of products' %></title>
+                </head>
+                <body>
+                  <section>
+                    <h1 style="text-align: center;"><%='List of products'%></h1>
+                      <ul style="display: flex;flex-direction: row;justify-content: space-around; flex-wrap: wrap;list-style:none;">
+                        <% products.forEach(function(product) { %>
+                            <li style="border: 2px solid green;padding: 20px;width: 20%;text-align: center;background: lightgreen;">
+                                <h3><%= product.name %></h3>
+                                <h3><%= product.price %></h3>
+                                 <a href="http://localhost:8080/products/<%= product._id %>">Descriptions</a> %>
+
+                            </li>
+                        <% }); %>
+                      </ul>
+                    
+                    
+                  </section>
+               
+                </body>
+</html>

@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= 'List products'
+  body(style="background: #91ff003b")
+    section
+        h1(style="text-align: center;")= 'List of products'
+        ul(style="display: flex;flex-direction: row;justify-content: space-around; flex-wrap: wrap;list-style:none;")
+          each val in products
+            li(style="border: 2px solid green;padding: 20px;width: 20%;text-align: center;background: lightgreen;")
+              h3= val.name
+              h3= `${val.price} $`
+              a(href=`http://localhost:8080/products/${val._id}`) Descriptions
